@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jersey: ['"Jersey 10"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
