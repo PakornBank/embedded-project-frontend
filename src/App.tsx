@@ -45,7 +45,7 @@ const App = () => {
 
 	// Control water pump
 	const controlPump = (status: boolean) => {
-		const pumpRef = ref(database, "esp32/pump");
+		const pumpRef = ref(database, "esp32/waterPump");
 		set(pumpRef, status).catch((error) => {
 			console.error("Failed to update pump status:", error);
 		});
