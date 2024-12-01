@@ -5,7 +5,7 @@ interface Props {
 
 const NumberDisplay = ({ title, value }: Props) => {
 	return (
-		<div className="h-[10%] w-[22%]">
+		<div className="h-[10%] w-[20%] lg:w-[10%]">
 			<div className="flex items-center justify-center relative h-1/2 z-10 ">
 				<img
 					src="assets/textbox.png"

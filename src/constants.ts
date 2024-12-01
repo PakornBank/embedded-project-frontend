@@ -1,4 +1,4 @@
 export enum TreeStatus {
-	Happy = "HAPPY",
-	Sad = "SAD",
+	Sick = "sick",
+	Healthy = "healthy",
 }
