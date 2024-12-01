@@ -20,7 +20,9 @@ const App = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch("http://localhost:3000/process-image");
+				const response = await fetch(
+					`${import.meta.env.VITE_BACKEND_URL}/process-image`
+				);
 				const data = await response.json();
 				setTreeStatus(data.top);
 			} catch (error) {
@@ -50,7 +52,7 @@ const App = () => {
 	};
 
 	const sendEmail = () => {
-		fetch("http://localhost:3000/trigger-sensor-email");
+		fetch(`${import.meta.env.VITE_BACKEND_URL}/trigger-sensor-email`);
 	};
 
 	return (
