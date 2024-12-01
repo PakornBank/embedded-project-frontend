@@ -20,7 +20,7 @@ const NumberDisplay = ({ title, value }: Props) => {
 					alt="number display background"
 					className="absolute h-[250%] w-auto object-contain"
 				/>
-				<p className="font-jersey text-3xl z-10">{value}</p>
+				<p className="font-jersey text-xl sm:text-3xl z-10">{value}</p>
 			</div>
 		</div>
 	);

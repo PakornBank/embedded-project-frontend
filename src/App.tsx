@@ -61,11 +61,11 @@ const App = () => {
 			<EmailButton onClick={sendEmail} />
 			<StatusBubble status={treeStatus || TreeStatus.Healthy} />
 			<div className="-z-10 absolute h-screen w-screen flex justify-center mt-auto items-end pb-32 px-4 isolate">
-				<NumberDisplay value={humidity} title="Humidity" />
-				<NumberDisplay value={temperature} title="Temp" />
+				<NumberDisplay value={humidity + "%"} title="Humidity" />
+				<NumberDisplay value={temperature + "°C"} title="Temp" />
 				<NumberDisplay value={light} title="Light" />
 				<NumberDisplay value={gas} title="Gas" />
-				<NumberDisplay value={soilMoisture} title="Soil" />
+				<NumberDisplay value={soilMoisture + "%"} title="Soil" />
 				<NumberDisplay value={pumpStatus ? "On" : "Off"} title="Pump" />
 			</div>
 			<div className="flex justify-center items-end absolute bottom-0 w-full mb-10">
