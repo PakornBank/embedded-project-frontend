@@ -8,15 +8,11 @@ const StatusBubble = ({ status }: StatusProps) => {
 	return (
 		<div className="absolute left-1/2 h-1/6 top-[10%] flex items-center justify-center">
 			<img
-				src={`/public/assets/${status}.gif`}
+				src={`assets/${status}.gif`}
 				alt=""
 				className="h-2/3 absolute top-[10%]"
 			/>
-			<img
-				src="/public/assets/bubble.png"
-				alt="Text Bubble"
-				className="h-full"
-			/>
+			<img src="assets/bubble.png" alt="Text Bubble" className="h-full" />
 		</div>
 	);
 };
